@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #faf7f1;
+  --color-cream-dark: #efe7d6;
+  --color-card: #ffffff;
+  --color-taupe-50: #f4efe4;
+  --color-taupe-100: #e6dcc5;
+  --color-taupe-300: #cbbb9a;
+  --color-taupe-500: #a3905f;
+  --color-taupe-700: #756347;
+  --color-ink: #211e1a;
+  --color-ink-soft: #564f42;
+  --color-ink-faint: #8a8270;
+  --color-gold-300: #e3c98c;
+  --color-gold-400: #d2ab68;
+  --color-gold-500: #b6863f;
+  --color-gold-600: #8f6a30;
+  --color-border: #e6dcc8;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-card: var(--color-card);
+  --color-taupe-50: var(--color-taupe-50);
+  --color-taupe-100: var(--color-taupe-100);
+  --color-taupe-300: var(--color-taupe-300);
+  --color-taupe-500: var(--color-taupe-500);
+  --color-taupe-700: var(--color-taupe-700);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-ink-faint: var(--color-ink-faint);
+  --color-gold-300: var(--color-gold-300);
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-600: var(--color-gold-600);
+  --color-border: var(--color-border);
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+}
+
+.tracking-wide-sm {
+  letter-spacing: 0.06em;
+}
+
+.tracking-wide-lg {
+  letter-spacing: 0.2em;
+}
+
+.watermark-letter {
+  font-family: var(--font-serif);
+  line-height: 0.8;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.35s ease-out both;
+}
